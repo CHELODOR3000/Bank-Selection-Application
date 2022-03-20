@@ -1,0 +1,91 @@
+{% extends 'firstapp/base.html' %}
+
+{% block title %}
+Результат обработки данных
+{% endblock %}
+{% block content %}
+    <h1>Результаты</h1>
+    <!--<p>
+        <h5>Результат отбора первых трёх форм:</h5>
+        {% for p in List %}
+           <span>{{ p }} ||</span>
+        {% endfor %}
+    </p>
+    <p>
+        <h5>Online-bank:</h5>
+        {% for u in FirstService %}
+            <span>{{ u }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Мобильное приложение:</h5>
+        {% for g in SecondService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>SMS-информирование:</h5>
+        {% for g in ThirdService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Ведение переписки с банком:</h5>
+        {% for g in FourthService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Круглосуточная поддержка:</h5>
+        {% for g in FifthService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Конвертация валюты:</h5>
+        {% for g in SixthService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Интеграция с 1С:</h5>
+        {% for g in SeventhService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Получение информации о расчетном счете:</h5>
+        {% for g in EighthService %}
+            {{ g }}
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Платежи и переводы валютой:</h5>
+        {% for g in NinethService %}
+            {{ g }}
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Продажа валюты:</h5>
+        {% for u in TenthService %}
+            <span>{{ u }} ||</span>
+        {% endfor %}
+    </p>
+    <br>-->
+    <p>
+        <h5>Вам подходят следующие банки:</h5>
+        {% for m in Result %}
+            <p>- {{ m }}</p>
+        {% endfor %}
+        <p>{{ Error }}</p>
+    </p>
+{% endblock %}

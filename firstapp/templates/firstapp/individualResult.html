@@ -1,0 +1,101 @@
+{% extends 'firstapp/base.html' %}
+
+{% block title %}
+Результат обработки данных
+{% endblock %}
+
+{% block content %}
+<h1>Результаты</h1>
+    <!--<p>
+        <h5>Результат отбора первых четырех форм:</h5>
+        {% for p in List %}
+            <span>{{ p }} ||</span>
+        {% endfor %}
+    </p>
+    <p>
+        <h5>Online-bank:</h5>
+        {% for u in FirstService %}
+            <span>{{ u }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Мобильное приложение:</h5>
+        {% for g in SecondService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>SMS-информирование:</h5>
+        {% for g in ThirdService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Telegramm Бот:</h5>
+        {% for g in FourthService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Круглосуточная поддержка:</h5>
+        {% for g in FifthService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Конвертация валюты:</h5>
+        {% for g in SixthService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Оплата услуг (ЖКХ, Интернет, TV и т.д.):</h5>
+        {% for g in SeventhService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Оплата кредита:</h5>
+        {% for g in EighthService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Открытие вклада:</h5>
+        {% for g in NinethService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>E-involving:</h5>
+        {% for g in TenthService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        <h5>Private banking:</h5>
+        {% for g in EleventhService %}
+            <span>{{ g }} ||</span>
+        {% endfor %}
+    </p>
+    <br>-->
+    <p>
+        <h5>Вам подходят следующие банки:</h5>
+        {% for m in Result %}
+            <p>- {{ m }}</p>
+        {% endfor %}
+        <p> {{ Error }}</p>
+    </p>
+   
+
+{% endblock %}

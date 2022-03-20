@@ -1,0 +1,90 @@
+{% extends 'firstapp/base.html' %}
+
+{% block title %}
+Физическое лицо
+{% endblock %}
+
+{% block content %}
+
+<h1>Введите данные:</h1>
+<form action="firstapp/individualBanks">
+    
+    <span class="yearPrice">1. Максимальная цена обслуживания в год:</span>
+    <input type="number" name="yearPrice"  required>
+    <br>
+    <br>
+
+    <span class="percentOut">2. Процент перевода в другие банки:</span>
+    <input type="number" name="percentOut" min="0" step="0.1" required>
+    <br>
+    <br>
+
+    <span class="percentIn">3. Процент перевода внутри банка:</span>
+    <input type="number" name="percentIn" min="0" step="0.1" required>
+    <br>
+    <br>
+
+    <span class="comission">4. Комиссия на пополнение:</span>
+    <input type="number" name="comission" min="0" step="0.1" required>
+
+    <br>
+    <br>
+    <span style="font-weight: 600;">Выберите дополнительные услуги:</span>
+    <br>
+    <div class="container" style="margin: 10px 0 10px 30px;">
+        <span style="margin-right: 205px;">- Online-bank:</span>
+        <input class="online_bank" type="radio" name="services1" value="True">Да
+        <input type="radio" name="services1" value="" checked>Нет
+            
+        
+        <br>
+        <span style="margin-right: 109px;">- Мобильное приложение:</span>
+        <input type="radio" name="services2" value="True">Да
+        <input type="radio" name="services2" value="" checked>Нет
+        <br>
+        <span style="margin-right: 123px;">- SMS-информирование:</span>
+        <input type="radio" name="services3" value="True">Да
+        <input type="radio" name="services3" value="" checked>Нет
+        <br>
+        <span style="margin-right: 184px;">- Telegramm Бот:</span>
+        <input type="radio" name="services4" value="True">Да
+        <input type="radio" name="services4" value="" checked>Нет
+        <br>
+        <span style="margin-right: 89px;">- Круглосуточная поддержка:</span>
+        <input type="radio" name="services5" value="True">Да
+        <input type="radio" name="services5" value="" checked>Нет
+        <br>
+        <span style="margin-right: 135px;">- Конвертация валюты:</span>
+        <input type="radio" name="services6" value="True">Да
+        <input type="radio" name="services6" value="" checked>Нет
+        <br>
+        <span style="margin-right: 6px;">- Оплата услуг (ЖКХ, Интернет, TV и т.д.):</span>
+        <input type="radio" name="services7" value="True">Да
+        <input type="radio" name="services7" value="" checked>Нет
+        <br>
+        <span style="margin-right: 175px;">- Оплата кредита:</span>
+        <input type="radio" name="services8" value="True">Да
+        <input type="radio" name="services8" value="" checked>Нет
+        <br>
+        <span style="margin-right: 165px;">- Открытие вклада:</span>
+        <input type="radio" name="services9" value="True">Да
+        <input type="radio" name="services9" value="" checked>Нет
+        <br>
+        <span style="margin-right: 213px;">- E-involving:</span>
+        <input type="radio" name="services10" value="True">Да
+        <input type="radio" name="services10" value="" checked>Нет
+        <br>
+        <span style="margin-right: 182px;">- Private banking:</span>
+        <input type="radio" name="services11" value="True">Да
+        <input type="radio" name="services11" value="" checked>Нет
+    </div>
+    
+    <span style="font-weight: 600;">Для продолжения нажмите "Далее"</span>
+    <div style="margin: 5px 0 20px 0">
+        <a class="btn btn-outline-primary" href="{% url 'facialChoice' %}">Назад</a>
+        <input type="reset" class="btn btn-outline-primary">
+        <button type="submit" class="btn btn-outline-primary">Далее</button>
+    </div>
+</form>
+
+{% endblock %}

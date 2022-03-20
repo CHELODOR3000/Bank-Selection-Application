@@ -1,0 +1,21 @@
+{% extends 'firstapp/base.html' %}
+
+{% block title %}
+Выбор системы
+{% endblock %}
+
+{% block content %}
+<h1>Выберите, какая система вам нужна:</h1><br>
+<form action="firstapp/facialResult" method="GET">
+    <input type="radio" name="facialChoice" value="individual" checked>Система для физических лиц
+    <br>
+    <input type="radio" name="facialChoice" value="legal">Система для юрических лиц
+    <br>
+    <br>
+    <p>Для продолжения нажмите "Далее"</p>
+
+    <a class="btn btn-outline-primary" href="{% url 'home' %}">Назад</a>
+    <button type="submit" class="btn btn-outline-primary">Далее</button>
+</form>
+
+{% endblock %}

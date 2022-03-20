@@ -1,0 +1,33 @@
+.integrationPrice {
+    margin-right: 118px;
+}
+
+.servicePrice {
+    margin-right: 10px;
+}
+
+.comissionOut {
+    margin-right: 92px;
+}
+
+
+
+.yearPrice {
+    margin-right: 10px;
+}
+
+.percentOut {
+    margin-right: 57px;
+}
+
+.percentIn {
+    margin-right: 70px;
+}
+.comission {
+    margin-right: 123px;
+}
+
+input[type=number] {
+    width: 100px;
+}
+
